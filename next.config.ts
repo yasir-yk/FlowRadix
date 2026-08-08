@@ -1,8 +1,14 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+const repoName = "flowradix";
+
 const nextConfig: NextConfig = {
-  reactStrictMode: true,
+  output: "export",
+  basePath: isProd ? `/${repoName}` : "",
+  trailingSlash: true,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -13,3 +19,4 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
