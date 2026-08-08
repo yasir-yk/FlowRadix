@@ -191,7 +191,7 @@ export function Hero() {
 
                 {/* Central Brand Emblem */}
                 <div className="relative p-6 sm:p-8 rounded-2xl bg-white dark:bg-slate-950/80 border border-slate-200 dark:border-slate-700/80 shadow-2xl backdrop-blur-xl">
-                  <Logo size="xl" showText={false} />
+                  <Logo size="xl" />
                 </div>
               </div>
 
